@@ -15,14 +15,15 @@ import {
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
 import main from './main/main.component';
+import singin from './singin/singin.component';
+
 import constants from './app.constants';
 import util from '../components/util/util.module';
 
+
 import './app.scss';
 
-angular.module('developmentApp', [ngCookies, ngResource, ngSanitize, ngRoute, navbar, footer, main,
-  constants, util
-])
+angular.module('developmentApp', [ngCookies, ngResource, ngSanitize, ngRoute, navbar, footer, main, singin, constants, util])
   .config(routeConfig);
 
 angular.element(document)
